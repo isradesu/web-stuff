@@ -1,0 +1,50 @@
+.conteudo1{
+    border: 1px solid red;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+.conteudo2{
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 100;
+}
+
+.conteudo3{
+    border: 1px solid red;
+    background: rgb(252, 127, 244);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    z-index: 1;
+}
+
+a{
+    padding: 5px 10px;
+}
+
+a:link{
+    color: hotpink;
+    text-decoration: none;
+}
+
+a:visited{
+    color: hotpink;
+}
+a:hover{
+    color: #ffffff;
+    background: #6d790f
+}
+a:active{
+    color: #e4f371;
+}

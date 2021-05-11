@@ -1,0 +1,10 @@
+<strong> negrito
+<em> itálico
+<u> underline
+<strike> errado
+<ul> coloca um pontinho antes
+<ul type="disc"> coloca um pontinho preenchido
+<ul type="circle"> coloca uma bolinha vazia
+<ul type="square"> coloca um quadradinho preenchido
+Lista ordenada: 1, A, a, I, i
+<ol type="xxxx"> muda o tipo de ordem

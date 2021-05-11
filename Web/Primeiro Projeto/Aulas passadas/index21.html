@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+</head>
+<body>
+    <h2>Produtos</h2>
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Notebook</td>
+            <td>R$ 3.450,99</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td><a href="http://zombo.com/">Tablet</a></td>
+            <td>R$ 1.200,99</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td><img src="narutinho.jpg" width="100"></td>
+            <td>R$ 49,99</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Desconto</td>
+            <td colspan="2">CUPOM100 -R$ 100</td>
+        </tr>
+        <tr>
+            <td colspan="2">CUPOM200 -R$ 200</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td colspan="2">dps eu calculo to c preguica</td>
+        </tr>
+    </table>
+
+    <h2>Login</h2>
+    <form action="">
+        Login:<br>
+        <input type="text" name="login"><br>
+        Senha:<br>
+        <input type="password" name="senha"><br>
+        <input type="submit" value="Login">
+    </form>
+    <h2>Cadastre-se</h2>
+    <form action="">
+        Login:<br>
+        <input type="text"><br><br>
+        Sexo:<br>
+        <input type="radio" name="sexo" value="M">Masculino<br>
+        <input type="radio" name="sexo" value="F">Feminino<br><br>
+        Interesses<br>
+        <input type="checkbox">Programação<br>
+        <input type="checkbox">Eletrônica<br>
+        <input type="checkbox">Redes<br><br>
+        Estado<br>
+        <select name="" id="">
+            <option value="sp">SP</option>
+            <option value="rj">RJ</option>
+            <option value="ce">CE</option>
+            <option value="mg">MG</option>
+            <option value="to">TO</option>
+            <option value="pe">PE</option>
+        </select><br><br>
+        Observações:<br>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

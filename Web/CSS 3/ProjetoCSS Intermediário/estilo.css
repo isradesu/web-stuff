@@ -1,0 +1,51 @@
+/*.conteudo {
+    border: 1px solid red;
+    padding: 20px;
+    width: 150px;
+    margin: 10px;
+}
+
+.conteudo2 {
+    margin: 5px;
+    width: 150px;
+    border: 1px solid red;
+}
+
+#noticia {
+    background: #f9f9f9;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+h2 {
+
+    margin: 0px;
+}*/
+
+.conteudo{
+    background: cyan;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+
+.conteudo1{
+    background: red;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+#principal {
+    border: 5px solid aquamarine;
+    background: teal;
+}
+
+

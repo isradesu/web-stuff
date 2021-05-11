@@ -1,0 +1,49 @@
+
+.borda{
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+#container{
+    background: #FFF;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+}
+
+body{
+    background:teal;
+}
+
+h1{
+    
+}
+
+p{
+    width: 300px;
+}
+
+.relative{
+    border: 1px solid gray;
+    position: relative;
+    top: 20px;
+}
+
+.absolute{
+    position: absolute;
+    border: 1px solid gray;
+    width: 800px;
+    background: #f2f2f2;
+    margin: 10px auto;
+    padding: 10px;
+
+}
+.fixed{
+    border: 1px solid red;
+    background: #f2f2f2;
+    position: fixed;
+    margin: 0px;
+    bottom: 0px;
+    right: 0px;
+}

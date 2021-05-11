@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #ffffff;
+}
+h3{
+    color: darkgrey;
+    background: darkslategrey;
+    padding: 5px;
+    border-radius: 5px;
+}
+.topo{
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.cabecalho {
+    background-color: rgb(0, 115, 255);
+    text-align: center;
+}
+.subtopo{
+    padding-bottom: 10px;
+}
+a:link, a:visited{
+    text-decoration: none;
+    margin: 6px;
+    color: rgb(0, 0, 0);
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+.cabecalho a:link, .cabecalho a:visited{
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+}
+.cabecalho a:hover{
+    color: rgb(0, 115, 255);
+    background: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+.preto{
+    color: rgb(19, 19, 19);
+}
+.postagem1{
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+.data-postagem{
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+.postagem1 a:link, .postagem1 a:visited, .conteudolateral a:link, .conteudolateral a:visited{
+    color: rgb(0, 136, 255);
+}
+#area-principal{
+    width: 920px;
+    margin: 0 auto;
+
+}
+#area-postagens, #area-lateral{
+    
+}
+#area-postagens{
+    width: 660px;
+    float: left;
+}
+#area-lateral{
+    width: 240px;
+    float: right;
+}
+.conteudolateral{
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.postagemlateral{
+    font-size: 0.9em;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+#rodape{
+    clear: both;
+    text-align: center;
+    padding: 15px;
+}
