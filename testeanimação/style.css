@@ -1,0 +1,7 @@
+#animation-container {
+    width: 1280px; /* Ajuste de acordo com o tamanho desejado */
+    height: 720px; /* Ajuste de acordo com o tamanho desejado */
+    background-size: cover;
+    position: relative;
+  }
+  
