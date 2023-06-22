@@ -1,68 +1,56 @@
 var imagePaths = [
-    'frames/frame1.png',
-    'frames/frame2.png',
-    'frames/frame3.png',
-    'frames/frame4.png',
-    'frames/frame5.png',
-    'frames/frame6.png',
-    'frames/frame7.png',
-    'frames/frame8.png',
-    'frames/frame9.png',
-    'frames/frame10.png',
-    'frames/frame12.png',
-    'frames/frame13.png',
-    'frames/frame14.png',
-    'frames/frame15.png',
-    'frames/frame16.png',
-    'frames/frame17.png',
-    'frames/frame18.png',
-    'frames/frame19.png',
-    'frames/frame20.png',
-    'frames/frame21.png',
-    'frames/frame22.png',
-    'frames/frame23.png',
-    'frames/frame24.png',
+    'frame1.png',
+    'frame2.png',
+    'frame3.png',
+    'frame4.png',
+    'frame5.png',
+    'frame6.png',
+    'frame7.png',
+    'frame8.png',
+    'frame9.png',
+    'frame10.png',
+    'frame11.png',
+    'frame12.png',
+    'frame13.png',
+    'frame14.png',
+    'frame15.png',
+    'frame16.png',
+    'frame17.png',
+    'frame18.png',
+    'frame19.png',
+    'frame20.png',
+    'frame21.png',
+    'frame22.png',
+    'frame23.png',
+    'frame24.png',
 
 
     
     // Adicione aqui os caminhos de todas as imagens que você deseja pré-carregar
   ];
   
-  var images = [];
-  var imagesLoaded = 0;
-  
-  function preloadImages(callback) {
+  // Função para pré-carregar as imagens
+  function preloadImages() {
     for (var i = 0; i < imagePaths.length; i++) {
-      var image = new Image();
-      image.src = imagePaths[i];
-      image.onload = function() {
-        imagesLoaded++;
-        if (imagesLoaded === imagePaths.length) {
-          callback();
-        }
-      };
-      images.push(image);
+      var img = new Image();
+      img.src = imagePaths[i];
     }
   }
-  
-  // Chamada para pré-carregar as imagens
-  preloadImages(function() {
-    // As imagens foram pré-carregadas, agora você pode iniciar a animação
-    // ou fazer qualquer outra ação necessária
-  });
 
+  // Função para executar a animação
+  function runAnimation() {
+    var animation = document.querySelector('#animation');
+    var currentFrame = 1;
 
-var frameIndex = 1;
-var totalFrames = 24;
-var animationContainer = document.querySelector('#animation-container')
-
-function playAnimation() {
-  var frameImagePath = 'frames/frame' + frameIndex + '.png';
-  animationContainer.style.backgroundImage = 'url(' + frameImagePath + ')';
-  frameIndex++;
-  if (frameIndex > totalFrames) {
-    frameIndex = 1;
+    setInterval(function() {
+      animation.style.backgroundImage = 'url(' + imagePaths[currentFrame] + ')';
+      currentFrame = (currentFrame % 24) + 1;
+    }, 1000 / 24); // Framerate de 24fps
   }
-}
 
-setInterval(playAnimation, 100); // Ajuste a velocidade da animação conforme necessário (em milissegundos)
+  // Carregar as imagens antes de executar a animação
+  window.onload = function() {
+    preloadImages();
+    
+  };
+  runAnimation();
