@@ -3,8 +3,8 @@
 <head>
   <style>
     #animation {
-      width: 1280px;
-      height: 720px;
+      width: 100vw;
+      height: 100vh;
       position: relative;
       overflow: hidden;
     }
@@ -45,6 +45,8 @@
       'cloud_frames/frame24.png',
       // Adicione os caminhos das outras imagens aqui até o frame 24
     ];
+
+    var animationExecuted = false;
 
     // Função para pré-carregar as imagens
     function preloadImages(callback) {
@@ -95,6 +97,7 @@
       }
 
       showFrame();
+      animationExecuted = true;
     }
 
     // Carregar as imagens antes de executar a animação
@@ -102,12 +105,13 @@
     };
 
     document.addEventListener('scroll', () => {
-    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight
+      const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
 
-    if (window.scrollY >= scrollableHeight/2 && window.scrollY <= scrollableHeight/1.9) {
-      preloadImages(runAnimation);
-    }
-})
+      if (!animationExecuted && window.scrollY >= scrollableHeight / 2 && window.scrollY <= scrollableHeight / 1.9) {
+        preloadImages(runAnimation);
+      }
+    });
+  </script>
   </script>
 </head>
 <body>
@@ -126,6 +130,7 @@
     <img src="cloud_frames/frame8.png" alt="Frame 8">
     <img src="cloud_frames/frame9.png" alt="Frame 9">
     <img src="cloud_frames/frame10.png" alt="Frame 10">
+    <img src="cloud_frames/frame11.png" alt="Frame 10">
     <img src="cloud_frames/frame12.png" alt="Frame 12">
     <img src="cloud_frames/frame13.png" alt="Frame 13">
     <img src="cloud_frames/frame14.png" alt="Frame 14">
