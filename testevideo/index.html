@@ -10,7 +10,7 @@
     }
 
     #animation img {
-      position: absolute;
+      position: fixed;
       width: 100%;
       height: 100%;  
       top: 0;
@@ -20,33 +20,33 @@
   </style>
   <script>
     var imagePaths = [
-    'frame1.png',
-    'frame2.png',
-    'frame3.png',
-    'frame4.png',
-    'frame5.png',
-    'frame6.png',
-    'frame7.png',
-    'frame8.png',
-    'frame9.png',
-    'frame10.png',
-    'frame12.png',
-    'frame13.png',
-    'frame14.png',
-    'frame15.png',
-    'frame16.png',
-    'frame17.png',
-    'frame18.png',
-    'frame19.png',
-    'frame20.png',
-    'frame21.png',
-    'frame22.png',
-    'frame23.png',
-    'frame24.png',
+      'cloud_frames/frame1.png',
+      'cloud_frames/frame2.png',
+      'cloud_frames/frame3.png',
+      'cloud_frames/frame4.png',
+      'cloud_frames/frame5.png',
+      'cloud_frames/frame6.png',
+      'cloud_frames/frame7.png',
+      'cloud_frames/frame8.png',
+      'cloud_frames/frame9.png',
+      'cloud_frames/frame10.png',
+      'cloud_frames/frame12.png',
+      'cloud_frames/frame13.png',
+      'cloud_frames/frame14.png',
+      'cloud_frames/frame15.png',
+      'cloud_frames/frame16.png',
+      'cloud_frames/frame17.png',
+      'cloud_frames/frame18.png',
+      'cloud_frames/frame19.png',
+      'cloud_frames/frame20.png',
+      'cloud_frames/frame21.png',
+      'cloud_frames/frame22.png',
+      'cloud_frames/frame23.png',
+      'cloud_frames/frame24.png',
       // Adicione os caminhos das outras imagens aqui até o frame 24
     ];
 
-     // Função para pré-carregar as imagens
+    // Função para pré-carregar as imagens
     function preloadImages(callback) {
       var loadedImages = 0;
       var totalImages = imagePaths.length;
@@ -99,41 +99,50 @@
 
     // Carregar as imagens antes de executar a animação
     window.onload = function() {
-      preloadImages(runAnimation);
     };
-    // Carregar as imagens antes de executar a animação
-    window.onload = function() {
+
+    document.addEventListener('scroll', () => {
+    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight
+
+    if (window.scrollY >= scrollableHeight/2 && window.scrollY <= scrollableHeight/1.9) {
       preloadImages(runAnimation);
-    };
+    }
+})
   </script>
 </head>
 <body>
-    <div id="animation">
-        <img src="frame1.png" alt="Frame 1">
-        <img src="frame2.png" alt="Frame 2">
-        <img src="frame3.png" alt="Frame 3">
-        <img src="frame4.png" alt="Frame 4">
-        <img src="frame5.png" alt="Frame 5">
-        <img src="frame6.png" alt="Frame 6">
-        <img src="frame7.png" alt="Frame 7">
-        <img src="frame8.png" alt="Frame 8">
-        <img src="frame9.png" alt="Frame 9">
-        <img src="frame10.png" alt="Frame 10">
-        <img src="frame11.png" alt="Frame 11">
-        <img src="frame12.png" alt="Frame 12">
-        <img src="frame13.png" alt="Frame 13">
-        <img src="frame14.png" alt="Frame 14">
-        <img src="frame15.png" alt="Frame 15">
-        <img src="frame16.png" alt="Frame 16">
-        <img src="frame17.png" alt="Frame 17">
-        <img src="frame18.png" alt="Frame 18">
-        <img src="frame19.png" alt="Frame 19">
-        <img src="frame20.png" alt="Frame 20">
-        <img src="frame21.png" alt="Frame 21">
-        <img src="frame22.png" alt="Frame 22">
-        <img src="frame23.png" alt="Frame 23">
-        <img src="frame24.png" alt="Frame 24">
-      </div>
-      
+  <div style="height: 140vh;">
+    <!-- Espaço vazio para rolar a página -->
+  </div>
+
+  <div id="animation">
+    <img src="cloud_frames/frame1.png" alt="Frame 1">
+    <img src="cloud_frames/frame2.png" alt="Frame 2">
+    <img src="cloud_frames/frame3.png" alt="Frame 3">
+    <img src="cloud_frames/frame4.png" alt="Frame 4">
+    <img src="cloud_frames/frame5.png" alt="Frame 5">
+    <img src="cloud_frames/frame6.png" alt="Frame 6">
+    <img src="cloud_frames/frame7.png" alt="Frame 7">
+    <img src="cloud_frames/frame8.png" alt="Frame 8">
+    <img src="cloud_frames/frame9.png" alt="Frame 9">
+    <img src="cloud_frames/frame10.png" alt="Frame 10">
+    <img src="cloud_frames/frame12.png" alt="Frame 12">
+    <img src="cloud_frames/frame13.png" alt="Frame 13">
+    <img src="cloud_frames/frame14.png" alt="Frame 14">
+    <img src="cloud_frames/frame15.png" alt="Frame 15">
+    <img src="cloud_frames/frame16.png" alt="Frame 16">
+    <img src="cloud_frames/frame17.png" alt="Frame 17">
+    <img src="cloud_frames/frame18.png" alt="Frame 18">
+    <img src="cloud_frames/frame19.png" alt="Frame 19">
+    <img src="cloud_frames/frame20.png" alt="Frame 20">
+    <img src="cloud_frames/frame21.png" alt="Frame 21">
+    <img src="cloud_frames/frame22.png" alt="Frame 22">
+    <img src="cloud_frames/frame23.png" alt="Frame 23">
+    <img src="cloud_frames/frame24.png" alt="Frame 24">
+  </div>
+  
+  <div style="height: 2000px;">
+    <!-- Espaço para rolar a página e fazer a div aparecer -->
+  </div>
 </body>
 </html>
