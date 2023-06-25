@@ -1,0 +1,14 @@
+{
+  "name": "minha.aplicacao",
+  "version": "1.0.0",
+  "description": "Aplicacao do Isra e da Soph",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sophia Teixeira Araujo, Israel Leite Filhe",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
