@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+        overflow-x: hidden;
+    }
+    .nuvem {
+      position: absolute;
+      top: 100px;
+      left: -29.38vw;
+      width: 29.38vw;
+      height: 9.22vw;
+    
+      animation: moverNuvem 15s linear infinite;
+    }
+
+    .nuvem2 {
+      position: absolute;
+      top: 300px;
+      left: -29.38vw;
+      width: 29.38vw;
+      height: 9.22vw;
+    
+      animation: moverNuvem 8s linear infinite;
+    }
+
+    .nuvem3 {
+      position: absolute;
+      top: 500px;
+      left: -29.38vw;
+      width: 29.38vw;
+      height: 9.22vw;
+    
+      animation: moverNuvem 15s linear infinite;
+      animation-direction: reverse;
+    }
+
+    .nuvem4 {
+      position: absolute;
+      top: 700px;
+      left: -29.38vw;
+      width: 29.38vw;
+      height: 9.22vw;
+    
+      animation: moverNuvem 12s linear infinite;
+    }
+
+    .nuvem img{
+      width: 29.38vw;
+    }
+
+    .nuvem2 img{
+      width: 19.38vw;
+    }
+
+    .nuvem3 img{
+      width: 19.38vw;
+    }
+
+    .nuvem4 img{
+      width: 15.38vw;
+    }
+
+    @keyframes moverNuvem {
+      0% {
+        transform: translateX(-29.38vw);
+      }
+      100% {
+        transform: translateX(calc(100vw + 29.38vw));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nuvem">
+    <img src="nuvem1.png" alt="">
+  </div>
+
+  <div class="nuvem2">
+    <img src="nuvem2.png" alt="">
+  </div>
+
+  <div class="nuvem3">
+    <img src="nuvem3.png" alt="">
+  </div>
+
+  <div class="nuvem4">
+    <img src="nuvem4.png" alt="">
+  </div>
+</body>
+</html>
